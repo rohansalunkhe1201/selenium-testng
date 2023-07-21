@@ -24,11 +24,11 @@ public class Ex1_GetReviewsFromFlipkartApp
 		driver.findElement(By.xpath("//input[@class='_3704LK']")).sendKeys("redmi 9 power");
 		
 		//click on submit btn
-		driver.findElement(By.xpath("//img[@class='396cs4']")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
 		//get reviews
-		
-		
+		String reviews = driver.findElement(By.xpath("((//div[@class='_2kHMtA'])[1]//span)[8]")).getText();
+		System.out.println(reviews);
 		
 
 		

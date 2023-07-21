@@ -16,9 +16,9 @@ public class Ex6_DragAndDrop
 		
 		Thread.sleep(2000);
 		
-		WebElement src = driver.findElement(By.xpath("//a[@class='button button-orange'][2]"));
+		WebElement src = driver.findElement(By.xpath("((//a[@class='button button-orange'])[2]"));
 		
-		WebElement dest = driver.findElement(By.xpath("//div[@class='ui-widget-content'][3]"));
+		WebElement dest = driver.findElement(By.xpath("((//div[@class='ui-widget-content'])[3]"));
 		
 		Actions act=new Actions(driver);
 		
